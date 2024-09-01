@@ -1,38 +1,143 @@
-.App {
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+h1, h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container input, .form-container textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+.entry-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.entry-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.entry-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.entry-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.entry-item button {
+  margin-right: 10px;
+}
+
+.entry-item button.edit {
+  background-color: #007bff;
+}
+
+.entry-item button.edit:hover {
+  background-color: #0056b3;
+}
+
+.entry-item button.delete {
+  background-color: #dc3545;
+}
+
+.entry-item button.delete:hover {
+  background-color: #c82333;
+}
+
+.form-container{
+  justify-content: center;
+  margin-top: 10px;
 }
